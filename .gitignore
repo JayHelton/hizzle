@@ -1,0 +1,8 @@
+.netrwhist
+*.swp
+before.vim
+after.vim
+spell/*
+bundle/
+plugged/
+autoload/plug.vim*
