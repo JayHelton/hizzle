@@ -30,14 +30,13 @@ set noshowmode           " Hide the default mode text (e.g. -- INSERT -- below t
 set timeout ttimeoutlen=50
 set updatetime=300       " Smaller updatetime for CursorHold & CursorHoldI
 set signcolumn=yes
-
+"jarrett
 set splitright           " Splits to the right
 autocmd VimResized * wincmd =   " Automatically equalize splits when Vim is resized
 
 set wildmenu                    " show list instead of just completing
 set wildmode=list:longest,full  " command <Tab> completion, list matches, then longest common part, then all.
 set completeopt=menu            " Just show the menu upon completion (faster)
-
 set directory=~/tmp      " Keep swap files out of the working dir, Adjust if needed in another dir
 
 syntax on
@@ -97,3 +96,8 @@ let g:python3_host_prog = '/usr/bin/python'
 " Spelling
 " ==================================================
 set spell
+
+" turn relative line numbers off
+set norelativenumber
+set nornu
+

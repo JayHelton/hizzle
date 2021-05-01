@@ -6,7 +6,7 @@ set wildignore+=*.so,*.swp,*.zip,*.pyc,*.pyo
 let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|templates_c'
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:15,results:30'
 
-nmap <leader>f :CtrlP<CR>
+nmap <leader>o :CtrlP<CR>
 
 " ==================================================
 " gr opens Fuzzy tags search
