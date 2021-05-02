@@ -63,4 +63,4 @@ func! ActionMenuCodeActionsCallback(index, item) abort
   endif
 endfunc
 
-nnoremap <silent> <Leader>s :call ActionMenuCodeActions()<CR>
+"nnoremap <silent> <Leader>s :call ActionMenuCodeActions()<CR>

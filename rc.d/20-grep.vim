@@ -1,7 +1,7 @@
 " ==================================================
 " Setup grep shortcuts and use ripgrep if available
 " ==================================================
-nmap g/ :grep!<space>
+nmap <leader>f :grep!<space>
 nmap g* :grep! -w <C-R><C-W><space>
 nmap ga :grepadd!<space>
 

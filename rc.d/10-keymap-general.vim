@@ -11,7 +11,7 @@ map <c-c> <Nop>
 imap <c-c> <Nop>
 
 " Commands for quicker file handlines
-nnoremap <leader>w :w<CR>
+nnoremap <leader>s :w<CR>
 nnoremap <leader>q :q!<CR>
 nnoremap <leader>qq :qa!<CR>
 
@@ -74,7 +74,3 @@ noremap <F2> <Esc>:close<CR><Esc>
 nmap <leader>d :b#<bar>bd#<CR>
 
 
-" ==================================================
-" Clean all end of line whitespace with <Leader>S
-" ==================================================
-:nnoremap <silent><leader>S :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
