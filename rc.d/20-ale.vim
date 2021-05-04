@@ -11,3 +11,8 @@ let g:airline#extensions#ale#warning_symbol = '⚠:'
 
 " Use system flake8
 let g:ale_python_flake8_executable = '/usr/bin/flake8'
+
+" misc
+let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
+
+nmap <C-L> :ALEFix<CR>

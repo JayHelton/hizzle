@@ -72,5 +72,6 @@ noremap <F2> <Esc>:close<CR><Esc>
 
 " Deleter buffer, keep the split (switch to prev buf, delete now prev buf)
 nmap <leader>d :b#<bar>bd#<CR>
+nnoremap <expr> <leader>bd ":bd " .input("Enter Buffer Number:") . " <CR>"
 
 

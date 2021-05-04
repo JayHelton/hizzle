@@ -4,7 +4,7 @@
 nmap <leader>f :grep!<space>
 nmap g* :grep! -w <C-R><C-W><space>
 nmap ga :grepadd!<space>
-
+nmap <leader>r :%s/1/2/g
 if executable("rg")
     set grepprg=rg\ --vimgrep\ --no-heading
     set grepformat=%f:%l:%c:%m,%f:%l:%m
