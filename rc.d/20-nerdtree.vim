@@ -3,6 +3,7 @@
 " ==================================================
 
 let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
-map <F3> :NERDTreeToggle<CR>
+map <leader>` :NERDTreeToggle<CR>
 let g:NERDTreeWinSize=60
+nmap <leader>1 :NERDTreeFind<CR>
 

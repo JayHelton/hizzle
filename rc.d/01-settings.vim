@@ -53,12 +53,12 @@ if has('linebreak')      " Break indent wrapped lines
 end
 
 " ==================================================
-" Tab expanded to 4 spaces
+" Tab expanded to 2 spaces
 " ==================================================
-set tabstop=4            " numbers of spaces of tab character
-set shiftwidth=4         " numbers of spaces to (auto)indent
+set tabstop=2            " numbers of spaces of tab character
+set shiftwidth=2         " numbers of spaces to (auto)indent
 set expandtab		     " Tab to spaces by default
-set softtabstop=4
+set softtabstop=2
 
 " ==================================================
 " Search settings
