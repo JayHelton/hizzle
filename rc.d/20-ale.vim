@@ -15,4 +15,6 @@ let g:ale_python_flake8_executable = '/usr/bin/flake8'
 " misc
 let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
 
+nmap <leader>L :ALEFix<CR>
+
 nmap <C-L> :ALEFix<CR>
