@@ -9,11 +9,9 @@ let g:ale_sign_warning = '⚠'
 let g:airline#extensions#ale#error_symbol = '✖:'
 let g:airline#extensions#ale#warning_symbol = '⚠:'
 
-" Use system flake8
-let g:ale_python_flake8_executable = '/usr/bin/flake8'
-
 " misc
-let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
+ let g:ale_fixers = {'python': ['autopep8'], 'html': ['prettier'], 'typescript': ['prettier', 'eslint'], 'javascript': ['prettier', 'eslint']}
+let g:ale_fixers = ['autopep8', 'yapf', 'prettier', 'eslint']
 
 nmap <leader>L :ALEFix<CR>
 
