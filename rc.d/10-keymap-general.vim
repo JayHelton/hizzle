@@ -41,10 +41,10 @@ map <silent> <leader>V :source ~/.config/nvim/init.vim<CR>:filetype detect<CR>:e
 " ==================================================
 
 " control + vim direction key to navigate windows
-noremap <C-J> <C-W>j
-noremap <C-K> <C-W>k
-noremap <C-H> <C-W>h
-noremap <C-L> <C-W>l
+noremap <leader>j <C-W>j
+noremap <leader>k <C-W>k
+noremap <leader>h <C-W>h
+noremap <leader>l <C-W>l
 
 " control + arrow key to navigate windows
 noremap <C-Down> <C-W>j
@@ -62,10 +62,9 @@ imap <C-W> <C-O><C-W>
 " - and + to resize horizontal splits
 map - <C-W>-
 map + <C-W>+
-
 " alt-< or alt-> for vertical splits
-map <m-,> <C-W>>
-map <m-.> <C-W><
+map > <C-W>>
+map < <C-W><
 
 " F2 close current split (window)
 noremap <F2> <Esc>:close<CR><Esc>
@@ -74,4 +73,6 @@ noremap <F2> <Esc>:close<CR><Esc>
 nmap <leader>d :b#<bar>bd#<CR>
 nnoremap <expr> <leader>bd ":bd " .input("Enter Buffer Number:") . " <CR>"
 
-
+map <leader>. :bn<cr>
+map <leader>, :bp<cr>
+map gd :bd<cr> 
