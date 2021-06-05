@@ -6,13 +6,13 @@ set wildignore+=*.so,*.swp,*.zip,*.pyc,*.pyo
 let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|templates_c'
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:15,results:30'
 
-nmap <leader>o :CtrlP<CR>
-nmap <leader>O :CtrlPBuffer<CR>
+" nmap <leader>o :CtrlP<CR>
+" nmap <leader>O :CtrlPBuffer<CR>
 
 " ==================================================
 " gr opens Fuzzy tags search
 " ==================================================
-nmap gr :CtrlPBufTag<CR>
+" nmap gr :CtrlPBufTag<CR>
 let g:ctrlp_buftag_types = {
 \ 'go' : '--language-force=go --golang-types=ftv',
 \ 'coffee' : '--language-force=coffee --coffee-types=cmfvf',

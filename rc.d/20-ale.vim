@@ -8,9 +8,11 @@ let g:ale_sign_warning = '⚠'
 " For airline integrstion
 let g:airline#extensions#ale#error_symbol = '✖:'
 let g:airline#extensions#ale#warning_symbol = '⚠:'
+let g:ale_fix_on_save = 1
+let g:ale_completion_autoimport = 1
 
 " misc
-let g:ale_fixers = {'c': ['clangtidy'],'rust': ['rustfmt'] ,'python': ['autopep8'], 'html': ['prettier'], 'typescript': ['prettier', 'eslint'], 'json': ['prettier'], 'javascript': ['prettier', 'eslint']}
+let g:ale_fixers = {'cc': ['clang-format'],'rust': ['rustfmt'] ,'python': ['black'], 'html': ['prettier'], 'typescript': ['prettier', 'eslint'], 'json': ['prettier'], 'javascript': ['prettier', 'eslint']}
 
 nmap <leader>L :ALEFix<CR>
 
