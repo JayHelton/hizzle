@@ -96,8 +96,5 @@ let g:python3_host_prog = '/usr/bin/python'
 " Spelling
 " ==================================================
 set spell
-
-" turn relative line numbers off
-set norelativenumber
-set nornu
-
+set number                     " Show current line number
+set relativenumber             " Show relative line numbers
