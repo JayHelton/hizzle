@@ -39,5 +39,5 @@ tmux_it() {
 search() {
   term=$1
   dir=$1
-  grep -r "$1" $2 | fzf
+  rg -r "$1" $2 | fzf
 }

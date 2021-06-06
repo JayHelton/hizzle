@@ -14,6 +14,10 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
+" Neovim Tree sitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/playground'
+
 " Color schemes and appearance
 
 Plug 'frankier/neovim-colors-solarized-truecolor-only'
@@ -76,7 +80,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Programming languages
 
-Plug 'klen/python-mode'
 Plug 'fatih/vim-go'
 Plug 'rust-lang/rust.vim'
 Plug 'hail2u/vim-css3-syntax'
