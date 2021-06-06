@@ -1,7 +1,7 @@
 " ==================================================
 " Setup grep shortcuts and use ripgrep if available
 " ==================================================
-nmap <leader>f :grep!<space>
+nmap <leader>F :grep!<space>
 nmap g* :grep! -w <C-R><C-W><space>
 nmap ga :grepadd!<space>
 nmap <leader>r :%s/1/2/g
