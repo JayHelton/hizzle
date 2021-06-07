@@ -5,7 +5,7 @@
 let g:airline_extensions = ['branch', 'tabline', 'ale']
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
-let airline#extensions#ale#show_line_numbers = 0
+let airline#extensions#ale#show_line_numbers = 1
 let g:airline_theme = 'deus'
 
 " remove the encoding section

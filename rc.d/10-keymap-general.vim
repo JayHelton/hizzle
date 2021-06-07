@@ -62,9 +62,10 @@ imap <C-W> <C-O><C-W>
 " - and + to resize horizontal splits
 map - <C-W>-
 map + <C-W>+
+
 " alt-< or alt-> for vertical splits
-map > <C-W>>
-map < <C-W><
+"noremap <leader>> <C-W>>
+"noremap <leader>< <C-W><
 
 " F2 close current split (window)
 noremap <F2> <Esc>:close<CR><Esc>

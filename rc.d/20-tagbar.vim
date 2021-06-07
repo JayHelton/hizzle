@@ -2,4 +2,4 @@
 " Tagbar Mapping
 " ==================================================
 
-nmap <F5> :TagbarToggle<CR>
+nmap <F3> :TagbarToggle<CR>

@@ -3,7 +3,7 @@
 " ==================================================
 let g:rehash256 = 1
 set background=dark
-colorscheme gruvbox 
+colorscheme dracula 
 let g:solarized_termtrans=1
 
 let g:solarized_contrast="high"
