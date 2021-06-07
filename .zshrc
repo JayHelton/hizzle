@@ -31,7 +31,7 @@ tmux_it() {
   project=$1
   cd $HOME/projects/$project || { return; }
   tmux new -s $project -d
-  tmux split-window -t $project -l 10
+  tmux split-window -t $project -l 1
   tmux send-keys -t "$project:1.1" C-z "nvim ." Enter
   tmux a -t "$project:1.1"
 }

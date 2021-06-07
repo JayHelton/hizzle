@@ -91,7 +91,7 @@ match WhitespaceEOL /\s\+$/
 " Python program where client is installed
 " ==================================================
 
-let g:python3_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/usr/bin/python3'
 
 
 " ==================================================
