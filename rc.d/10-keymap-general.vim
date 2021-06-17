@@ -46,33 +46,27 @@ noremap <leader>k <C-W>k
 noremap <leader>h <C-W>h
 noremap <leader>l <C-W>l
 
-" control + arrow key to navigate windows
-noremap <C-Down> <C-W>j
-noremap <C-Up> <C-W>k
-noremap <C-Left> <C-W>h
-noremap <C-Right> <C-W>l
-
-" ==================================================
 " Splits handling
 " ==================================================
 
 " Make these all work in insert mode
 imap <C-W> <C-O><C-W>
 
-" - and + to resize horizontal splits
-noremap - <C-W>-
-noremap + <C-W>+
+map - <C-W>-
+map + <C-W>+
+map > <C-W>>
+map < <C-W><
 
+" F2 close current split (window)
 noremap <F2> <Esc>:close<CR><Esc>
 
 " Deleter buffer, keep the split (switch to prev buf, delete now prev buf)
 nnoremap <leader>d :b#<bar>bd#<CR>
 nnoremap <expr> <leader>bd ":bd " .input("Enter Buffer Number:") . " <CR>"
 
-nnoremap <leader>. :bn<cr>
-nnoremap <leader>, :bp<cr>
-nnoremap gd :bd<cr> 
-nnoremap <Leader>b :b <C-d>
+map <leader>. :bn<cr>
+map <leader>, :bp<cr>
+map bd :bd<cr> 
 
 nnoremap <C-j> :m .+1<CR>==
 nnoremap <C-k> :m .-2<CR>==
