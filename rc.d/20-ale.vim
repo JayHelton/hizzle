@@ -15,5 +15,3 @@ let g:ale_completion_autoimport = 1
 let g:ale_fixers = {'rust': ['rustfmt'] ,'python': ['black'], 'html': ['prettier'], 'typescript': ['prettier', 'eslint'], 'json': ['prettier'], 'javascript': ['prettier', 'eslint']}
 
 nmap <leader>L :ALEFix<CR>
-
-nmap <C-L> :ALEFix<CR>

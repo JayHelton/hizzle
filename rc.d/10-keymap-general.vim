@@ -46,26 +46,16 @@ noremap <leader>k <C-W>k
 noremap <leader>h <C-W>h
 noremap <leader>l <C-W>l
 
-" control + arrow key to navigate windows
-noremap <C-Down> <C-W>j
-noremap <C-Up> <C-W>k
-noremap <C-Left> <C-W>h
-noremap <C-Right> <C-W>l
-
-" ==================================================
 " Splits handling
 " ==================================================
 
 " Make these all work in insert mode
 imap <C-W> <C-O><C-W>
 
-" - and + to resize horizontal splits
 map - <C-W>-
 map + <C-W>+
-
-" alt-< or alt-> for vertical splits
-"noremap <leader>> <C-W>>
-"noremap <leader>< <C-W><
+map > <C-W>>
+map < <C-W><
 
 " F2 close current split (window)
 noremap <F2> <Esc>:close<CR><Esc>
@@ -76,7 +66,7 @@ nnoremap <expr> <leader>bd ":bd " .input("Enter Buffer Number:") . " <CR>"
 
 map <leader>. :bn<cr>
 map <leader>, :bp<cr>
-map gd :bd<cr> 
+map bd :bd<cr> 
 
 nnoremap <C-j> :m .+1<CR>==
 nnoremap <C-k> :m .-2<CR>==

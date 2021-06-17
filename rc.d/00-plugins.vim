@@ -12,11 +12,12 @@ Plug 'ThePrimeagen/harpoon'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-telescope/telescope-fzy-native.nvim'
+Plug 'nvim-telescope/telescope-fzy-native.nvim', { 'do': ':Git submodule update --init --recursive' }
 
 " Neovim Tree sitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/playground'
+Plug 'nvim-treesitter/nvim-treesitter-refactor'
 
 " Color schemes and appearance
 
@@ -48,6 +49,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'Yggdroot/indentLine'
+Plug 'vimwiki/vimwiki'
 Plug 'lukas-reineke/indent-blankline.nvim'
 if has('nvim')
   Plug 'kizza/actionmenu.nvim'
