@@ -60,23 +60,19 @@ noremap <C-Right> <C-W>l
 imap <C-W> <C-O><C-W>
 
 " - and + to resize horizontal splits
-map - <C-W>-
-map + <C-W>+
+noremap - <C-W>-
+noremap + <C-W>+
 
-" alt-< or alt-> for vertical splits
-"noremap <leader>> <C-W>>
-"noremap <leader>< <C-W><
-
-" F2 close current split (window)
 noremap <F2> <Esc>:close<CR><Esc>
 
 " Deleter buffer, keep the split (switch to prev buf, delete now prev buf)
-nmap <leader>d :b#<bar>bd#<CR>
+nnoremap <leader>d :b#<bar>bd#<CR>
 nnoremap <expr> <leader>bd ":bd " .input("Enter Buffer Number:") . " <CR>"
 
-map <leader>. :bn<cr>
-map <leader>, :bp<cr>
-map gd :bd<cr> 
+nnoremap <leader>. :bn<cr>
+nnoremap <leader>, :bp<cr>
+nnoremap gd :bd<cr> 
+nnoremap <Leader>b :b <C-d>
 
 nnoremap <C-j> :m .+1<CR>==
 nnoremap <C-k> :m .-2<CR>==

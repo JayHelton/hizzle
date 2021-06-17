@@ -11,8 +11,7 @@ require('telescope').setup {
         qflist_previewer = require('telescope.previewers').vim_buffer_qflist.new,
     },
     mappings = {
-                ["<C-i>"] = actions.select_horizontal,
-        ["<C-q>"] = actions.send_to_qflist,
+        ["<C-i>"] = false,
     },
     extensions = {
         fzy_native = {
