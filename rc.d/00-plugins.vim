@@ -49,6 +49,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'Yggdroot/indentLine'
+Plug 'easymotion/vim-easymotion'
 Plug 'vimwiki/vimwiki'
 Plug 'lukas-reineke/indent-blankline.nvim'
 if has('nvim')
