@@ -2,7 +2,7 @@ export PATH=$(brew --prefix openvpn)/sbin:$PATH
 export PATH=/usr/bin/:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 export NVM_DIR="$HOME/.nvm"
-
+export EDITOR=vim
 ZSH_THEME=fletcherm
 plugins=(git fzf)
 
