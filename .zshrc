@@ -3,7 +3,10 @@ export PATH=/usr/bin/:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 export NVM_DIR="$HOME/.nvm"
 export EDITOR=vim
-ZSH_THEME=fletcherm
+export DOCKER_CLIENT_TIMEOUT=240
+export COMPOSE_HTTP_TIMEOUT=120
+
+ZSH_THEM=fletcherm
 plugins=(git fzf)
 
 source $ZSH/oh-my-zsh.sh
