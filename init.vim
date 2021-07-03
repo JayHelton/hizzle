@@ -1,6 +1,7 @@
 " ==================================================
 " Allow pre-definitions via ~/.config/nvim/before.vim
 " ==================================================
+set noswapfile 
 
 if filereadable(expand("~/.config/nvim/before.vim"))
     source ~/.config/nvim/before.vim

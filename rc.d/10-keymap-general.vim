@@ -76,3 +76,5 @@ vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 
 map <leader>c "*y
+command! BufOnly execute '%bdelete|edit #|normal `"'
+

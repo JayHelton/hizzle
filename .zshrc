@@ -8,7 +8,11 @@ export COMPOSE_HTTP_TIMEOUT=120
 
 
 ZSH_THEME=fletcherm
-plugins=(fzf)
+plugins=(
+  fzf
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 source "$HOME/.cargo/env"
@@ -38,6 +42,9 @@ zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
