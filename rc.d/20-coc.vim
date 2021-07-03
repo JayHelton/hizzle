@@ -1,7 +1,6 @@
 " ==================================================
 " COC configuration and mapping:wq
 " ==================================================
-
 " Use `lp` and `ln` for navigate diagnostics
 nmap <silent> <leader>lp <Plug>(coc-diagnostic-prev)
 nmap <silent> <leader>ln <Plug>(coc-diagnostic-next)
@@ -63,4 +62,8 @@ func! ActionMenuCodeActionsCallback(index, item) abort
   endif
 endfunc
 
-"nnoremap <silent> <Leader>s :call ActionMenuCodeActions()<CR>
+" Remap keys for applying codeAction to the current buffer.
+nmap <leader>ac  <Plug>(coc-codeaction)
+" Apply AutoFix to problem on the current line.
+nmap <leader>af  <Plug>(coc-fix-current)
+

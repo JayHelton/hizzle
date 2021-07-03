@@ -10,4 +10,8 @@ nnoremap <expr> <leader>ro ":s/" .input("find: ") . "/".input("replace with: ") 
 
 set grepprg=rg\ --vimgrep\ --no-heading
 set grepformat=%f:%l:%c:%m,%f:%l:%m
-
+augroup quickfix
+    autocmd!
+    autocmd QuickFixCmdPost [^l]* cwindow
+    autocmd QuickFixCmdPost l* lwindow
+augroup END
