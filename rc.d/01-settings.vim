@@ -3,6 +3,7 @@
 " ==================================================
 set path+=**
 
+set conceallevel=0
 let mapleader="\<Space>" " change the leader to be a space vs slash
 set ch=2                 " Make command line two lines high
 set ls=2                 " allways show status line
