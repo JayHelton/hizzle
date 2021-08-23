@@ -54,6 +54,8 @@ bindkey "^[[B" history-search-forward
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
+alias k=kubectl
+
 # Custom commands to open a NVIM sessions for the project
 hizzle() {
   if [ $# -eq 0 ]; then
@@ -78,19 +80,4 @@ search() {
   dir=$1
   rg -r "$1" $2 | fzf
 }
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/jarretthelton/packages/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/jarretthelton/packages/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/jarretthelton/packages/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/jarretthelton/packages/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
