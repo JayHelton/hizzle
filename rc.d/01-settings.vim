@@ -36,6 +36,11 @@ set signcolumn=yes
 set splitright           " Splits to the right
 autocmd VimResized * wincmd =   " Automatically equalize splits when Vim is resized
 
+set foldmethod=syntax "syntax highlighting items specify folds  
+set foldcolumn=1 "defines 1 col at window left, to indicate folding  
+let javaScript_fold=1 "activate folding by JS syntax  
+set foldlevelstart=99 "start file with all folds opened
+
 set wildmenu                    " show list instead of just completing
 set wildmode=list:longest,full  " command <Tab> completion, list matches, then longest common part, then all.
 set completeopt=menu            " Just show the menu upon completion (faster)
@@ -77,7 +82,7 @@ set smartcase            " if searching and search contains upper case, make cas
 " ==================================================
 set modelines=0
 set nomodeline
-
+set nowrap
 " ==================================================
 " Trailing whitespace handling
 " ==================================================
