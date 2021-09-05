@@ -100,3 +100,7 @@ let g:python3_host_prog = '/usr/bin/python3'
 set spell
 set number                     " Show current line number
 set relativenumber             " Show relative line numbers
+
+
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+

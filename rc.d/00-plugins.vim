@@ -50,9 +50,8 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'Yggdroot/indentLine'
-" Plug 'easymotion/vim-easymotion'
-" Plug 'vimwiki/vimwiki'
-" Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'easymotion/vim-easymotion'
+Plug 'lukas-reineke/indent-blankline.nvim'
 if has('nvim')
   Plug 'kizza/actionmenu.nvim'
 endif
@@ -61,9 +60,8 @@ endif
 "
 Plug 'tpope/vim-fugitive'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-" Plug 'ludovicchabant/vim-lawrencium'
-" Plug 'airblade/vim-gitgutter'
-" Plug 'junegunn/gv.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'junegunn/gv.vim'
 
 
 " Programming support
