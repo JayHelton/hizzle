@@ -107,5 +107,4 @@ set number                     " Show current line number
 set relativenumber             " Show relative line numbers
 
 
-let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 

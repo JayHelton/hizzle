@@ -51,7 +51,6 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'Yggdroot/indentLine'
 Plug 'easymotion/vim-easymotion'
-Plug 'lukas-reineke/indent-blankline.nvim'
 if has('nvim')
   Plug 'kizza/actionmenu.nvim'
 endif
