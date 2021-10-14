@@ -1,4 +1,3 @@
-export PATH=$(brew --prefix openvpn)/sbin:$PATH
 export PATH=/usr/bin/:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 export NVM_DIR="$HOME/.nvm"
@@ -6,8 +5,7 @@ export EDITOR=vim
 export DOCKER_CLIENT_TIMEOUT=240
 export COMPOSE_HTTP_TIMEOUT=120
 
-
-ZSH_THEME=fletcherm
+ZSH_THEME=nanotech
 plugins=(
   fzf
   zsh-autosuggestions
@@ -55,7 +53,8 @@ bindkey "^[[B" history-search-forward
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
 alias k=kubectl
-
+alias c=clear
+alias n="nvim ."
 # Custom commands to open a NVIM sessions for the project
 hizzle() {
   if [ $# -eq 0 ]; then
