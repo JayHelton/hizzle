@@ -55,6 +55,8 @@ bindkey "^[[B" history-search-forward
 alias k=kubectl
 alias c=clear
 alias n="nvim ."
+alias v=vivaldi
+
 # Custom commands to open a NVIM sessions for the project
 hizzle() {
   if [ $# -eq 0 ]; then
